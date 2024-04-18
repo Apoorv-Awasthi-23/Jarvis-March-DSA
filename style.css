@@ -1,0 +1,222 @@
+/* GLOBAL RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* FILL UP HEIGHT */
+
+html,
+body {
+  height: 100%;
+}
+
+/* FONT */
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* INPUT */
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  min-width: 11rem;
+  max-width: 40rem;
+}
+input[type="range"]:focus {
+  outline: none;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+  background-color: #333;
+  border-radius: 100rem;
+  height: 0.75rem;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  margin-top: -10px;
+  background-color: #aaa;
+  width: 2rem;
+  aspect-ratio: 1/1;
+  border-radius: 100rem;
+}
+input[type="range"]::-moz-range-track {
+  background-color: #333;
+  border-radius: 100rem;
+  height: 0.75rem;
+}
+input[type="range"]::-moz-range-thumb {
+  border: none;
+  border-radius: 0;
+  background-color: #aaa;
+  width: 2rem;
+  aspect-ratio: 1/1;
+}
+input[type="range"] {
+  margin: 1rem 0;
+}
+
+/* ESSENTIAL ELEMENTS */
+
+.wrapper {
+  min-height: 100%;
+  background-color: #111;
+  color: #aaa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  isolation: isolate;
+}
+
+.heading {
+  text-align: center;
+  line-height: 1.4;
+  padding-top: 1rem;
+  font-size: 1.5rem;
+  transition: all 0.3s;
+}
+
+.main-content {
+  background-color: #333;
+  flex: 1;
+  width: calc(100% - 2rem);
+  border-radius: 1rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.actions {
+  display: flex;
+  width: fit-content;
+  gap: 0.6rem;
+}
+
+/* BUTTON */
+
+.btn {
+  margin-bottom: 1rem;
+  border: none;
+  padding: 0.8rem 1rem;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn--start-visualization {
+  background-color: #aaa;
+}
+.btn--start-visualization:hover {
+  background-color: #fff;
+}
+
+.btn--randomize-points {
+  background-color: inherit;
+  box-shadow: inset 0 0 0 1px #aaa;
+  color: #aaa;
+}
+.btn--randomize-points:hover {
+  background-color: #fff;
+  color: #111;
+  box-shadow: none;
+}
+
+.cancel {
+  background-color: #b40000;
+  color: #aaa;
+}
+.cancel:hover {
+  background-color: red;
+  color: #fff;
+}
+
+/* POINT */
+
+.point {
+  border-radius: 100rem;
+  width: 50px;
+  aspect-ratio: 1/1;
+  position: absolute;
+  background-color: #aaa;
+  color: #333;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.hull,
+.next,
+.candidate {
+  color: #333;
+}
+.hull {
+  background-color: #00ff00;
+}
+.next {
+  background-color: #62faff;
+}
+.candidate {
+  background-color: #f9ff57;
+}
+
+/* LINE */
+
+.line {
+  position: absolute;
+  width: 2px;
+  z-index: 5;
+  transform-origin: bottom;
+  transition: opacity 0.3s;
+  opacity: 0;
+}
+.potential-next {
+  background-color: #62faff;
+  opacity: 1;
+}
+.candidate-in-consideration {
+  background-color: #f9ff57;
+  opacity: 1;
+}
+.hull-addition {
+  background-color: #00ff00;
+  opacity: 1;
+}
+
+/* SLIDER */
+
+.sliders {
+  display: flex;
+  flex-wrap: 1;
+  gap: 1rem;
+}
+.slider-value {
+  font-weight: 600;
+  color: #aaa;
+  font-size: 0.85rem;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 650px) {
+  .heading {
+    font-size: 1.1rem;
+  }
+}

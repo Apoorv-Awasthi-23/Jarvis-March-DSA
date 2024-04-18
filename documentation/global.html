@@ -1,0 +1,1575 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Global</title>
+
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="./build/entry.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,400,700|Inconsolata,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://jmblog.github.io/color-themes-for-google-code-prettify/themes/tomorrow-night.min.css"
+    />
+    <link type="text/css" rel="stylesheet" href="styles/app.min.css" />
+    <link type="text/css" rel="stylesheet" href="styles/iframe.css" />
+    <link type="text/css" rel="stylesheet" href="" />
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+  </head>
+
+  <body class="layout small-header">
+    <div id="stickyNavbarOverlay"></div>
+
+    <div class="top-nav">
+      <div class="inner">
+        <a
+          id="hamburger"
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+        <div class="logo"></div>
+        <div class="menu">
+          <div class="navigation">
+            <a href="index.html" class="link">Documentation </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main">
+      <div class="sidebar" id="sidebarNav">
+        <nav>
+          <h2><a href="index.html">Documentation</a></h2>
+          <div class="category">
+            <h3><a href="global.html">Global</a></h3>
+          </div>
+          <div class="category">
+            <h2>Client Dimensions</h2>
+            <h3>Global</h3>
+            <ul>
+              <li>
+                <a href="global.html#mainContentElementDimensions"
+                  >mainContentElementDimensions</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="category">
+            <h2>Control Variables</h2>
+            <h3>Global</h3>
+            <ul>
+              <li><a href="global.html#DELAY">DELAY</a></li>
+              <li><a href="global.html#NUM_OF_POINTS">NUM_OF_POINTS</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h2>Decision Booleans</h2>
+            <h3>Global</h3>
+            <ul>
+              <li>
+                <a href="global.html#continueVisualization"
+                  >continueVisualization</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="category">
+            <h2>Event Listeners</h2>
+            <h3>Global</h3>
+            <ul>
+              <li>
+                <a href="global.html#handleChangeInIterationDelay"
+                  >handleChangeInIterationDelay</a
+                >
+              </li>
+              <li>
+                <a href="global.html#handleChangeInNumberOfPoints"
+                  >handleChangeInNumberOfPoints</a
+                >
+              </li>
+              <li>
+                <a href="global.html#handleClickOnRandomizeButton"
+                  >handleClickOnRandomizeButton</a
+                >
+              </li>
+              <li>
+                <a href="global.html#handleClickOnVisualizationButton"
+                  >handleClickOnVisualizationButton</a
+                >
+              </li>
+              <li><a href="global.html#handleResize">handleResize</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h2>Events</h2>
+            <h3>Events</h3>
+            <ul>
+              <li><a href="global.html#event:click">click</a></li>
+              <li><a href="global.html#event:input">input</a></li>
+              <li><a href="global.html#event:resize">resize</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h2>Important Variables</h2>
+            <h3>Global</h3>
+            <ul>
+              <li><a href="global.html#randomPoints">randomPoints</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h2>Misc. Methods</h2>
+            <h3>Global</h3>
+            <ul>
+              <li>
+                <a href="global.html#cancelVisualization"
+                  >cancelVisualization</a
+                >
+              </li>
+              <li>
+                <a href="global.html#startVisualization">startVisualization</a>
+              </li>
+            </ul>
+          </div>
+          <div class="category">
+            <h2>Query Selectors</h2>
+            <h3>Global</h3>
+            <ul>
+              <li>
+                <a href="global.html#delaySliderElement">delaySliderElement</a>
+              </li>
+              <li>
+                <a href="global.html#delaySliderValueElement"
+                  >delaySliderValueElement</a
+                >
+              </li>
+              <li>
+                <a href="global.html#mainContentElement">mainContentElement</a>
+              </li>
+              <li>
+                <a href="global.html#numOfPointsSliderElement"
+                  >numOfPointsSliderElement</a
+                >
+              </li>
+              <li>
+                <a href="global.html#numOfPointsSliderValueElement"
+                  >numOfPointsSliderValueElement</a
+                >
+              </li>
+              <li>
+                <a href="global.html#randomizePointsButtonElement"
+                  >randomizePointsButtonElement</a
+                >
+              </li>
+              <li>
+                <a href="global.html#visualizationButtonElement"
+                  >visualizationButtonElement</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="category">
+            <h2>Utility Methods</h2>
+            <h3>Global</h3>
+            <ul>
+              <li><a href="global.html#artificialDelay">artificialDelay</a></li>
+              <li>
+                <a href="global.html#calculateDeterminant"
+                  >calculateDeterminant</a
+                >
+              </li>
+              <li><a href="global.html#randomizePoints">randomizePoints</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h2>Visual Methods</h2>
+            <h3>Global</h3>
+            <ul>
+              <li>
+                <a href="global.html#visuallyClearLines">visuallyClearLines</a>
+              </li>
+              <li>
+                <a href="global.html#visuallyClearPoints"
+                  >visuallyClearPoints</a
+                >
+              </li>
+              <li>
+                <a href="global.html#visuallyDrawLines">visuallyDrawLines</a>
+              </li>
+              <li>
+                <a href="global.html#visuallyDrawLinesBetweenAllPoints"
+                  >visuallyDrawLinesBetweenAllPoints</a
+                >
+              </li>
+              <li>
+                <a href="global.html#visuallyInitializePoints"
+                  >visuallyInitializePoints</a
+                >
+              </li>
+              <li>
+                <a href="global.html#visuallyShowHullPoints"
+                  >visuallyShowHullPoints</a
+                >
+              </li>
+              <li>
+                <a href="global.html#visuallyShowRandomizedPoints"
+                  >visuallyShowRandomizedPoints</a
+                >
+              </li>
+              <li>
+                <a href="global.html#visuallyUpdatePoints"
+                  >visuallyUpdatePoints</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="core" id="main-content-wrapper">
+        <div class="content">
+          <section>
+            <article>
+              <div class="container-overview">
+                <dl class="details"></dl>
+              </div>
+
+              <div class="vertical-section">
+                <h1>Members</h1>
+                <div class="members">
+                  <div class="member">
+                    <span class="method-parameter is-pulled-right">
+                      <label>Type:</label>
+
+                      <code class="param-type">number</code>
+                    </span>
+
+                    <h4 class="name" id="DELAY">
+                      <a class="href-link" href="#DELAY">#</a>
+
+                      <span class="tag">constant</span>
+
+                      <span class="code-name"> DELAY </span>
+                    </h4>
+
+                    <div class="description">
+                      [Controllable through slider on webpage] Controls delay
+                      between each iteration of the Visualization Process
+                    </div>
+
+                    <dl class="details">
+                      <p class="tag-source">
+                        <a href="script.js.html" class="button">View Source</a>
+                        <span>
+                          <a href="script.js.html">script.js</a>,
+                          <a href="script.js.html#line34">line 34</a>
+                        </span>
+                      </p>
+                    </dl>
+                  </div>
+
+                  <div class="member">
+                    <span class="method-parameter is-pulled-right">
+                      <label>Type:</label>
+
+                      <code class="param-type">number</code>
+                    </span>
+
+                    <h4 class="name" id="NUM_OF_POINTS">
+                      <a class="href-link" href="#NUM_OF_POINTS">#</a>
+
+                      <span class="tag">constant</span>
+
+                      <span class="code-name"> NUM_OF_POINTS </span>
+                    </h4>
+
+                    <div class="description">
+                      [Controllable through slider on webpage] Controls number
+                      of points displayed on the webpage
+                    </div>
+
+                    <dl class="details">
+                      <p class="tag-source">
+                        <a href="script.js.html" class="button">View Source</a>
+                        <span>
+                          <a href="script.js.html">script.js</a>,
+                          <a href="script.js.html#line27">line 27</a>
+                        </span>
+                      </p>
+                    </dl>
+                  </div>
+
+                  <div class="member">
+                    <span class="method-parameter is-pulled-right">
+                      <label>Type:</label>
+
+                      <code class="param-type">boolean</code>
+                    </span>
+
+                    <h4 class="name" id="continueVisualization">
+                      <a class="href-link" href="#continueVisualization">#</a>
+
+                      <span class="code-name"> continueVisualization </span>
+                    </h4>
+
+                    <div class="description">
+                      Decides whether to continue or termninte the current
+                      ongoing Visualization Process
+                    </div>
+
+                    <dl class="details">
+                      <p class="tag-source">
+                        <a href="script.js.html" class="button">View Source</a>
+                        <span>
+                          <a href="script.js.html">script.js</a>,
+                          <a href="script.js.html#line42">line 42</a>
+                        </span>
+                      </p>
+                    </dl>
+                  </div>
+
+                  <div class="member">
+                    <span class="method-parameter is-pulled-right">
+                      <label>Type:</label>
+
+                      <code class="param-type">HTMLElement</code>
+                    </span>
+
+                    <h4 class="name" id="delaySliderElement">
+                      <a class="href-link" href="#delaySliderElement">#</a>
+
+                      <span class="tag">constant</span>
+
+                      <span class="code-name"> delaySliderElement </span>
+                    </h4>
+
+                    <div class="description">
+                      Selects "input[type=range]" HTML DOM Element (slider for
+                      changing the iteration delay)
+                    </div>
+
+                    <dl class="details">
+                      <p class="tag-source">
+                        <a href="script.js.html" class="button">View Source</a>
+                        <span>
+                          <a href="script.js.html">script.js</a>,
+                          <a href="script.js.html#line90">line 90</a>
+                        </span>
+                      </p>
+                    </dl>
+                  </div>
+
+                  <div class="member">
+                    <span class="method-parameter is-pulled-right">
+                      <label>Type:</label>
+
+                      <code class="param-type">HTMLElement</code>
+                    </span>
+
+                    <h4 class="name" id="delaySliderValueElement">
+                      <a class="href-link" href="#delaySliderValueElement">#</a>
+
+                      <span class="tag">constant</span>
+
+                      <span class="code-name"> delaySliderValueElement </span>
+                    </h4>
+
+                    <div class="description">
+                      Selects "div" HTML DOM Element (area where the value of
+                      current iteration delay is displayed)
+                    </div>
+
+                    <dl class="details">
+                      <p class="tag-source">
+                        <a href="script.js.html" class="button">View Source</a>
+                        <span>
+                          <a href="script.js.html">script.js</a>,
+                          <a href="script.js.html#line78">line 78</a>
+                        </span>
+                      </p>
+                    </dl>
+                  </div>
+
+                  <div class="member">
+                    <span class="method-parameter is-pulled-right">
+                      <label>Type:</label>
+
+                      <code class="param-type">HTMLElement</code>
+                    </span>
+
+                    <h4 class="name" id="mainContentElement">
+                      <a class="href-link" href="#mainContentElement">#</a>
+
+                      <span class="tag">constant</span>
+
+                      <span class="code-name"> mainContentElement </span>
+                    </h4>
+
+                    <div class="description">
+                      Selects "main" HTML DOM Element (where the Visualization
+                      points and lines are displayed)
+                    </div>
+
+                    <dl class="details">
+                      <p class="tag-source">
+                        <a href="script.js.html" class="button">View Source</a>
+                        <span>
+                          <a href="script.js.html">script.js</a>,
+                          <a href="script.js.html#line50">line 50</a>
+                        </span>
+                      </p>
+                    </dl>
+                  </div>
+
+                  <div class="member">
+                    <span class="method-parameter is-pulled-right">
+                      <label>Type:</label>
+
+                      <code class="param-type">number</code>
+                    </span>
+
+                    <h4 class="name" id="mainContentElementDimensions">
+                      <a class="href-link" href="#mainContentElementDimensions"
+                        >#</a
+                      >
+
+                      <span class="code-name">
+                        mainContentElementDimensions
+                      </span>
+                    </h4>
+
+                    <div class="description">
+                      Gets the client size of the "main" HTML DOM Element
+                    </div>
+
+                    <dl class="details">
+                      <p class="tag-source">
+                        <a href="script.js.html" class="button">View Source</a>
+                        <span>
+                          <a href="script.js.html">script.js</a>,
+                          <a href="script.js.html#line98">line 98</a>
+                        </span>
+                      </p>
+                    </dl>
+                  </div>
+
+                  <div class="member">
+                    <span class="method-parameter is-pulled-right">
+                      <label>Type:</label>
+
+                      <code class="param-type">HTMLElement</code>
+                    </span>
+
+                    <h4 class="name" id="numOfPointsSliderElement">
+                      <a class="href-link" href="#numOfPointsSliderElement"
+                        >#</a
+                      >
+
+                      <span class="tag">constant</span>
+
+                      <span class="code-name"> numOfPointsSliderElement </span>
+                    </h4>
+
+                    <div class="description">
+                      Selects "input[type=range]" HTML DOM Element (slider for
+                      changing the number of points displayed)
+                    </div>
+
+                    <dl class="details">
+                      <p class="tag-source">
+                        <a href="script.js.html" class="button">View Source</a>
+                        <span>
+                          <a href="script.js.html">script.js</a>,
+                          <a href="script.js.html#line84">line 84</a>
+                        </span>
+                      </p>
+                    </dl>
+                  </div>
+
+                  <div class="member">
+                    <span class="method-parameter is-pulled-right">
+                      <label>Type:</label>
+
+                      <code class="param-type">HTMLElement</code>
+                    </span>
+
+                    <h4 class="name" id="numOfPointsSliderValueElement">
+                      <a class="href-link" href="#numOfPointsSliderValueElement"
+                        >#</a
+                      >
+
+                      <span class="tag">constant</span>
+
+                      <span class="code-name">
+                        numOfPointsSliderValueElement
+                      </span>
+                    </h4>
+
+                    <div class="description">
+                      Selects "div" HTML DOM Element (area where the value of
+                      current number of points is displayed)
+                    </div>
+
+                    <dl class="details">
+                      <p class="tag-source">
+                        <a href="script.js.html" class="button">View Source</a>
+                        <span>
+                          <a href="script.js.html">script.js</a>,
+                          <a href="script.js.html#line72">line 72</a>
+                        </span>
+                      </p>
+                    </dl>
+                  </div>
+
+                  <div class="member">
+                    <span class="method-parameter is-pulled-right">
+                      <label>Type:</label>
+
+                      <code class="param-type"
+                        >Array.&lt;<a href="global.html#Point">Point</a>></code
+                      >
+                    </span>
+
+                    <h4 class="name" id="randomPoints">
+                      <a class="href-link" href="#randomPoints">#</a>
+
+                      <span class="code-name"> randomPoints </span>
+                    </h4>
+
+                    <div class="description">
+                      Array of coordinates of randomly generated points
+                    </div>
+
+                    <dl class="details">
+                      <p class="tag-source">
+                        <a href="script.js.html" class="button">View Source</a>
+                        <span>
+                          <a href="script.js.html">script.js</a>,
+                          <a href="script.js.html#line453">line 453</a>
+                        </span>
+                      </p>
+                    </dl>
+                  </div>
+
+                  <div class="member">
+                    <span class="method-parameter is-pulled-right">
+                      <label>Type:</label>
+
+                      <code class="param-type">HTMLElement</code>
+                    </span>
+
+                    <h4 class="name" id="randomizePointsButtonElement">
+                      <a class="href-link" href="#randomizePointsButtonElement"
+                        >#</a
+                      >
+
+                      <span class="tag">constant</span>
+
+                      <span class="code-name">
+                        randomizePointsButtonElement
+                      </span>
+                    </h4>
+
+                    <div class="description">
+                      Selects "button" HTML DOM Element (randomizes the points)
+                    </div>
+
+                    <dl class="details">
+                      <p class="tag-source">
+                        <a href="script.js.html" class="button">View Source</a>
+                        <span>
+                          <a href="script.js.html">script.js</a>,
+                          <a href="script.js.html#line64">line 64</a>
+                        </span>
+                      </p>
+                    </dl>
+                  </div>
+
+                  <div class="member">
+                    <span class="method-parameter is-pulled-right">
+                      <label>Type:</label>
+
+                      <code class="param-type">HTMLElement</code>
+                    </span>
+
+                    <h4 class="name" id="visualizationButtonElement">
+                      <a class="href-link" href="#visualizationButtonElement"
+                        >#</a
+                      >
+
+                      <span class="tag">constant</span>
+
+                      <span class="code-name">
+                        visualizationButtonElement
+                      </span>
+                    </h4>
+
+                    <div class="description">
+                      Selects "button" HTML DOM Element (starts/stops a
+                      Visualization Process)
+                    </div>
+
+                    <dl class="details">
+                      <p class="tag-source">
+                        <a href="script.js.html" class="button">View Source</a>
+                        <span>
+                          <a href="script.js.html">script.js</a>,
+                          <a href="script.js.html#line56">line 56</a>
+                        </span>
+                      </p>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+
+              <div class="vertical-section">
+                <h1>Methods</h1>
+                <div class="members">
+                  <div class="member">
+                    <h4 class="name" id="artificialDelay">
+                      <a class="href-link" href="#artificialDelay">#</a>
+
+                      <span class="tag">async</span>
+
+                      <span class="code-name">
+                        artificialDelay<span class="signature"
+                          >(delayAmount)</span
+                        ><span class="type-signature"> &rarr; {Promise}</span>
+                      </span>
+                    </h4>
+
+                    <div class="description">
+                      Selects "input[type=range]" HTML DOM Element (slider for
+                      changing the iteration delay)
+                    </div>
+
+                    <h5>Parameters:</h5>
+
+                    <div class="table-container">
+                      <table class="params table">
+                        <thead>
+                          <tr>
+                            <th>Name</th>
+
+                            <th>Type</th>
+
+                            <th class="last">Description</th>
+                          </tr>
+                        </thead>
+
+                        <tbody>
+                          <tr class="deep-level-0">
+                            <td class="name"><code>delayAmount</code></td>
+
+                            <td class="type">
+                              <code class="param-type">number</code>
+                            </td>
+
+                            <td class="description last">
+                              Amount of synthetic delay to add in milliseconds
+                              (equal to iteration delay)
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                    <dl class="details">
+                      <p class="tag-source">
+                        <a href="script.js.html" class="button">View Source</a>
+                        <span>
+                          <a href="script.js.html">script.js</a>,
+                          <a href="script.js.html#line110">line 110</a>
+                        </span>
+                      </p>
+                    </dl>
+
+                    <div class="columns method-parameter">
+                      <div class="column is-2"><label>Returns:</label></div>
+                      <div class="column is-10">
+                        <div class="columns">
+                          <div class="param-desc column is-7">
+                            Resolved promise for an artificial delay of duration
+                            "delayAmount" milliseconds
+                          </div>
+
+                          <div class="column is-5 has-text-left">
+                            <label>Type: </label>
+
+                            <code class="param-type">Promise</code>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="member">
+                    <h4 class="name" id="calculateDeterminant">
+                      <a class="href-link" href="#calculateDeterminant">#</a>
+
+                      <span class="code-name">
+                        calculateDeterminant<span class="signature"
+                          >(hullPointIndex, nextPointIndex,
+                          candidatePointIndex)</span
+                        ><span class="type-signature"> &rarr; {number}</span>
+                      </span>
+                    </h4>
+
+                    <div class="description">
+                      Calculates determinant for knowing direction of
+                      orientation of 3 points
+                    </div>
+
+                    <h5>Parameters:</h5>
+
+                    <div class="table-container">
+                      <table class="params table">
+                        <thead>
+                          <tr>
+                            <th>Name</th>
+
+                            <th>Type</th>
+
+                            <th class="last">Description</th>
+                          </tr>
+                        </thead>
+
+                        <tbody>
+                          <tr class="deep-level-0">
+                            <td class="name"><code>hullPointIndex</code></td>
+
+                            <td class="type">
+                              <code class="param-type">number</code>
+                            </td>
+
+                            <td class="description last">
+                              Index of the current Hull Point in the
+                              randomPoints array
+                            </td>
+                          </tr>
+
+                          <tr class="deep-level-0">
+                            <td class="name"><code>nextPointIndex</code></td>
+
+                            <td class="type">
+                              <code class="param-type">number</code>
+                            </td>
+
+                            <td class="description last">
+                              Index of the current Next Point in the
+                              randomPoints array
+                            </td>
+                          </tr>
+
+                          <tr class="deep-level-0">
+                            <td class="name">
+                              <code>candidatePointIndex</code>
+                            </td>
+
+                            <td class="type">
+                              <code class="param-type">number</code>
+                            </td>
+
+                            <td class="description last">
+                              Index of the current Candidate Point in the
+                              randomPoints array
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                    <dl class="details">
+                      <p class="tag-source">
+                        <a href="script.js.html" class="button">View Source</a>
+                        <span>
+                          <a href="script.js.html">script.js</a>,
+                          <a href="script.js.html#line150">line 150</a>
+                        </span>
+                      </p>
+                    </dl>
+
+                    <div class="columns method-parameter">
+                      <div class="column is-2"><label>Returns:</label></div>
+                      <div class="column is-10">
+                        <div class="columns">
+                          <div class="param-desc column is-7">
+                            Calculated determinant of the three points
+                          </div>
+
+                          <div class="column is-5 has-text-left">
+                            <label>Type: </label>
+
+                            <code class="param-type">number</code>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="member">
+                    <h4 class="name" id="cancelVisualization">
+                      <a class="href-link" href="#cancelVisualization">#</a>
+
+                      <span class="code-name">
+                        cancelVisualization<span class="signature">()</span
+                        ><span class="type-signature"></span>
+                      </span>
+                    </h4>
+
+                    <div class="description">
+                      Stops the ongoing Visualization Process
+                    </div>
+
+                    <dl class="details">
+                      <p class="tag-source">
+                        <a href="script.js.html" class="button">View Source</a>
+                        <span>
+                          <a href="script.js.html">script.js</a>,
+                          <a href="script.js.html#line439">line 439</a>
+                        </span>
+                      </p>
+                    </dl>
+                  </div>
+
+                  <div class="member">
+                    <h4 class="name" id="handleChangeInIterationDelay">
+                      <a class="href-link" href="#handleChangeInIterationDelay"
+                        >#</a
+                      >
+
+                      <span class="code-name">
+                        handleChangeInIterationDelay<span class="signature"
+                          >(event)</span
+                        ><span class="type-signature"></span>
+                      </span>
+                    </h4>
+
+                    <div class="description">
+                      Listens to input event on the Slider to change the
+                      iteration delay to match the iteration delay as adjusted
+                      by the user
+                    </div>
+
+                    <h5>Parameters:</h5>
+
+                    <div class="table-container">
+                      <table class="params table">
+                        <thead>
+                          <tr>
+                            <th>Name</th>
+
+                            <th>Type</th>
+
+                            <th class="last">Description</th>
+                          </tr>
+                        </thead>
+
+                        <tbody>
+                          <tr class="deep-level-0">
+                            <td class="name"><code>event</code></td>
+
+                            <td class="type">
+                              <code class="param-type">Event</code>
+                            </td>
+
+                            <td class="description last"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                    <dl class="details">
+                      <p class="tag-source">
+                        <a href="script.js.html" class="button">View Source</a>
+                        <span>
+                          <a href="script.js.html">script.js</a>,
+                          <a href="script.js.html#line538">line 538</a>
+                        </span>
+                      </p>
+                    </dl>
+
+                    <div class="method-parameter columns">
+                      <div class="column is-2">
+                        <label>Listens to Events:</label>
+                      </div>
+                      <div class="column is-10">
+                        <ul>
+                          <li>
+                            <a href="global.html#event:input">event:input</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="member">
+                    <h4 class="name" id="handleChangeInNumberOfPoints">
+                      <a class="href-link" href="#handleChangeInNumberOfPoints"
+                        >#</a
+                      >
+
+                      <span class="code-name">
+                        handleChangeInNumberOfPoints<span class="signature"
+                          >(event)</span
+                        ><span class="type-signature"></span>
+                      </span>
+                    </h4>
+
+                    <div class="description">
+                      Listens to input event on the Slider to change the number
+                      of points displayed to match the displayed number of
+                      points as adjusted by the user
+                    </div>
+
+                    <h5>Parameters:</h5>
+
+                    <div class="table-container">
+                      <table class="params table">
+                        <thead>
+                          <tr>
+                            <th>Name</th>
+
+                            <th>Type</th>
+
+                            <th class="last">Description</th>
+                          </tr>
+                        </thead>
+
+                        <tbody>
+                          <tr class="deep-level-0">
+                            <td class="name"><code>event</code></td>
+
+                            <td class="type">
+                              <code class="param-type">Event</code>
+                            </td>
+
+                            <td class="description last"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                    <dl class="details">
+                      <p class="tag-source">
+                        <a href="script.js.html" class="button">View Source</a>
+                        <span>
+                          <a href="script.js.html">script.js</a>,
+                          <a href="script.js.html#line518">line 518</a>
+                        </span>
+                      </p>
+                    </dl>
+
+                    <div class="method-parameter columns">
+                      <div class="column is-2">
+                        <label>Listens to Events:</label>
+                      </div>
+                      <div class="column is-10">
+                        <ul>
+                          <li>
+                            <a href="global.html#event:input">event:input</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="member">
+                    <h4 class="name" id="handleClickOnRandomizeButton">
+                      <a class="href-link" href="#handleClickOnRandomizeButton"
+                        >#</a
+                      >
+
+                      <span class="code-name">
+                        handleClickOnRandomizeButton<span class="signature"
+                          >()</span
+                        ><span class="type-signature"></span>
+                      </span>
+                    </h4>
+
+                    <div class="description">
+                      Listens to click on the "Randomize Points Button" to
+                      randomize the points displayed
+                    </div>
+
+                    <dl class="details">
+                      <p class="tag-source">
+                        <a href="script.js.html" class="button">View Source</a>
+                        <span>
+                          <a href="script.js.html">script.js</a>,
+                          <a href="script.js.html#line487">line 487</a>
+                        </span>
+                      </p>
+                    </dl>
+
+                    <div class="method-parameter columns">
+                      <div class="column is-2">
+                        <label>Listens to Events:</label>
+                      </div>
+                      <div class="column is-10">
+                        <ul>
+                          <li>
+                            <a href="global.html#event:click">event:click</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="member">
+                    <h4 class="name" id="handleClickOnVisualizationButton">
+                      <a
+                        class="href-link"
+                        href="#handleClickOnVisualizationButton"
+                        >#</a
+                      >
+
+                      <span class="code-name">
+                        handleClickOnVisualizationButton<span class="signature"
+                          >()</span
+                        ><span class="type-signature"></span>
+                      </span>
+                    </h4>
+
+                    <div class="description">
+                      Listens to click on the "Start/Stop Visualization Button"
+                      to "start/stop" a Visualization Process
+                    </div>
+
+                    <dl class="details">
+                      <p class="tag-source">
+                        <a href="script.js.html" class="button">View Source</a>
+                        <span>
+                          <a href="script.js.html">script.js</a>,
+                          <a href="script.js.html#line468">line 468</a>
+                        </span>
+                      </p>
+                    </dl>
+
+                    <div class="method-parameter columns">
+                      <div class="column is-2">
+                        <label>Listens to Events:</label>
+                      </div>
+                      <div class="column is-10">
+                        <ul>
+                          <li>
+                            <a href="global.html#event:click">event:click</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="member">
+                    <h4 class="name" id="handleResize">
+                      <a class="href-link" href="#handleResize">#</a>
+
+                      <span class="code-name">
+                        handleResize<span class="signature">()</span
+                        ><span class="type-signature"></span>
+                      </span>
+                    </h4>
+
+                    <div class="description">
+                      Listens to resize event on window to visually clean
+                      points' colors and lines and randomize the points
+                    </div>
+
+                    <dl class="details">
+                      <p class="tag-source">
+                        <a href="script.js.html" class="button">View Source</a>
+                        <span>
+                          <a href="script.js.html">script.js</a>,
+                          <a href="script.js.html#line502">line 502</a>
+                        </span>
+                      </p>
+                    </dl>
+
+                    <div class="method-parameter columns">
+                      <div class="column is-2">
+                        <label>Listens to Events:</label>
+                      </div>
+                      <div class="column is-10">
+                        <ul>
+                          <li>
+                            <a href="global.html#event:resize">event:resize</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="member">
+                    <h4 class="name" id="randomizePoints">
+                      <a class="href-link" href="#randomizePoints">#</a>
+
+                      <span class="code-name">
+                        randomizePoints<span class="signature">()</span
+                        ><span class="type-signature"></span>
+                      </span>
+                    </h4>
+
+                    <div class="description">
+                      Creates an array of random points (coordinates are bounded
+                      by dimensions of the "main" content area)
+                    </div>
+
+                    <dl class="details">
+                      <p class="tag-source">
+                        <a href="script.js.html" class="button">View Source</a>
+                        <span>
+                          <a href="script.js.html">script.js</a>,
+                          <a href="script.js.html#line126">line 126</a>
+                        </span>
+                      </p>
+                    </dl>
+                  </div>
+
+                  <div class="member">
+                    <h4 class="name" id="startVisualization">
+                      <a class="href-link" href="#startVisualization">#</a>
+
+                      <span class="tag">async</span>
+
+                      <span class="code-name">
+                        startVisualization<span class="signature">()</span
+                        ><span class="type-signature"></span>
+                      </span>
+                    </h4>
+
+                    <div class="description">
+                      Starts the Visualization Process (when the "Start
+                      Visualization" button is clicked)
+                    </div>
+
+                    <dl class="details">
+                      <p class="tag-source">
+                        <a href="script.js.html" class="button">View Source</a>
+                        <span>
+                          <a href="script.js.html">script.js</a>,
+                          <a href="script.js.html#line361">line 361</a>
+                        </span>
+                      </p>
+                    </dl>
+                  </div>
+
+                  <div class="member">
+                    <h4 class="name" id="visuallyClearLines">
+                      <a class="href-link" href="#visuallyClearLines">#</a>
+
+                      <span class="code-name">
+                        visuallyClearLines<span class="signature">()</span
+                        ><span class="type-signature"></span>
+                      </span>
+                    </h4>
+
+                    <div class="description">
+                      Removes any color from all lines (changes all lines to
+                      transparent)
+                    </div>
+
+                    <dl class="details">
+                      <p class="tag-source">
+                        <a href="script.js.html" class="button">View Source</a>
+                        <span>
+                          <a href="script.js.html">script.js</a>,
+                          <a href="script.js.html#line320">line 320</a>
+                        </span>
+                      </p>
+                    </dl>
+                  </div>
+
+                  <div class="member">
+                    <h4 class="name" id="visuallyClearPoints">
+                      <a class="href-link" href="#visuallyClearPoints">#</a>
+
+                      <span class="code-name">
+                        visuallyClearPoints<span class="signature">()</span
+                        ><span class="type-signature"></span>
+                      </span>
+                    </h4>
+
+                    <div class="description">
+                      Removes any color from all points (changes color of all
+                      points to white)
+                    </div>
+
+                    <dl class="details">
+                      <p class="tag-source">
+                        <a href="script.js.html" class="button">View Source</a>
+                        <span>
+                          <a href="script.js.html">script.js</a>,
+                          <a href="script.js.html#line306">line 306</a>
+                        </span>
+                      </p>
+                    </dl>
+                  </div>
+
+                  <div class="member">
+                    <h4 class="name" id="visuallyDrawLines">
+                      <a class="href-link" href="#visuallyDrawLines">#</a>
+
+                      <span class="code-name">
+                        visuallyDrawLines<span class="signature">()</span
+                        ><span class="type-signature"></span>
+                      </span>
+                    </h4>
+
+                    <div class="description">
+                      Draws relevant coloured lines between points of the three
+                      categories. The lines can be categorized as:
+                      <br />1. Between Hull Point and Next Point indicating that
+                      the next point can be a potential next point. <br />2.
+                      Between Next POint and Candidate Point indidcating that
+                      the candidate point is under consideration to become a
+                      next point.
+                    </div>
+
+                    <dl class="details">
+                      <p class="tag-source">
+                        <a href="script.js.html" class="button">View Source</a>
+                        <span>
+                          <a href="script.js.html">script.js</a>,
+                          <a href="script.js.html#line264">line 264</a>
+                        </span>
+                      </p>
+                    </dl>
+                  </div>
+
+                  <div class="member">
+                    <h4 class="name" id="visuallyDrawLinesBetweenAllPoints">
+                      <a
+                        class="href-link"
+                        href="#visuallyDrawLinesBetweenAllPoints"
+                        >#</a
+                      >
+
+                      <span class="code-name">
+                        visuallyDrawLinesBetweenAllPoints<span class="signature"
+                          >()</span
+                        ><span class="type-signature"></span>
+                      </span>
+                    </h4>
+
+                    <div class="description">
+                      Draws invisible lines between every possible pair of
+                      points (0 opacity)
+                    </div>
+
+                    <dl class="details">
+                      <p class="tag-source">
+                        <a href="script.js.html" class="button">View Source</a>
+                        <span>
+                          <a href="script.js.html">script.js</a>,
+                          <a href="script.js.html#line195">line 195</a>
+                        </span>
+                      </p>
+                    </dl>
+                  </div>
+
+                  <div class="member">
+                    <h4 class="name" id="visuallyInitializePoints">
+                      <a class="href-link" href="#visuallyInitializePoints"
+                        >#</a
+                      >
+
+                      <span class="code-name">
+                        visuallyInitializePoints<span class="signature">()</span
+                        ><span class="type-signature"></span>
+                      </span>
+                    </h4>
+
+                    <div class="description">
+                      Shows the initial 'Hull', 'Next' and 'Candidate' points on
+                      the webpage on the onset of the Visualization Process
+                    </div>
+
+                    <dl class="details">
+                      <p class="tag-source">
+                        <a href="script.js.html" class="button">View Source</a>
+                        <span>
+                          <a href="script.js.html">script.js</a>,
+                          <a href="script.js.html#line225">line 225</a>
+                        </span>
+                      </p>
+                    </dl>
+                  </div>
+
+                  <div class="member">
+                    <h4 class="name" id="visuallyShowHullPoints">
+                      <a class="href-link" href="#visuallyShowHullPoints">#</a>
+
+                      <span class="code-name">
+                        visuallyShowHullPoints<span class="signature">()</span
+                        ><span class="type-signature"></span>
+                      </span>
+                    </h4>
+
+                    <div class="description">
+                      Marks all Hull points in green color after the Convex Hull
+                      has been found
+                    </div>
+
+                    <dl class="details">
+                      <p class="tag-source">
+                        <a href="script.js.html" class="button">View Source</a>
+                        <span>
+                          <a href="script.js.html">script.js</a>,
+                          <a href="script.js.html#line341">line 341</a>
+                        </span>
+                      </p>
+                    </dl>
+                  </div>
+
+                  <div class="member">
+                    <h4 class="name" id="visuallyShowRandomizedPoints">
+                      <a class="href-link" href="#visuallyShowRandomizedPoints"
+                        >#</a
+                      >
+
+                      <span class="code-name">
+                        visuallyShowRandomizedPoints<span class="signature"
+                          >()</span
+                        ><span class="type-signature"></span>
+                      </span>
+                    </h4>
+
+                    <div class="description">
+                      Shows all calculated random points on the webpage
+                    </div>
+
+                    <dl class="details">
+                      <p class="tag-source">
+                        <a href="script.js.html" class="button">View Source</a>
+                        <span>
+                          <a href="script.js.html">script.js</a>,
+                          <a href="script.js.html#line175">line 175</a>
+                        </span>
+                      </p>
+                    </dl>
+                  </div>
+
+                  <div class="member">
+                    <h4 class="name" id="visuallyUpdatePoints">
+                      <a class="href-link" href="#visuallyUpdatePoints">#</a>
+
+                      <span class="code-name">
+                        visuallyUpdatePoints<span class="signature">()</span
+                        ><span class="type-signature"></span>
+                      </span>
+                    </h4>
+
+                    <div class="description">
+                      Updates colors of points of the three categories, namely,
+                      'Hull', 'Next' and 'Candidate' after each iteration of the
+                      Visualization Process
+                    </div>
+
+                    <dl class="details">
+                      <p class="tag-source">
+                        <a href="script.js.html" class="button">View Source</a>
+                        <span>
+                          <a href="script.js.html">script.js</a>,
+                          <a href="script.js.html#line240">line 240</a>
+                        </span>
+                      </p>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+
+              <div class="vertical-section">
+                <h1>Type Definitions</h1>
+                <div class="members">
+                  <div class="member">
+                    <span class="method-parameter is-pulled-right">
+                      <label>Type:</label>
+
+                      <code class="param-type">Object</code>
+                    </span>
+
+                    <h4 class="name" id="Point">
+                      <a class="href-link" href="#Point">#</a>
+
+                      <span class="code-name"> Point </span>
+                    </h4>
+
+                    <dl class="details">
+                      <p class="tag-source">
+                        <a href="script.js.html" class="button">View Source</a>
+                        <span>
+                          <a href="script.js.html">script.js</a>,
+                          <a href="script.js.html#line4">line 4</a>
+                        </span>
+                      </p>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+
+              <div class="vertical-section">
+                <h1>Events</h1>
+                <div class="members">
+                  <div class="member">
+                    <h4 class="name" id="event:click">
+                      <a class="href-link" href="#event:click">#</a>
+
+                      <span class="code-name"> click </span>
+                    </h4>
+
+                    <dl class="details">
+                      <p class="tag-source">
+                        <a href="script.js.html" class="button">View Source</a>
+                        <span>
+                          <a href="script.js.html">script.js</a>,
+                          <a href="script.js.html#line7">line 7</a>
+                        </span>
+                      </p>
+                    </dl>
+
+                    <div class="method-parameter columns">
+                      <div class="column is-2">
+                        <label>Listeners of This Event:</label>
+                      </div>
+                      <div class="column is-10">
+                        <ul>
+                          <li>
+                            <a href="global.html#handleClickOnRandomizeButton"
+                              >handleClickOnRandomizeButton</a
+                            >
+                          </li>
+
+                          <li>
+                            <a
+                              href="global.html#handleClickOnVisualizationButton"
+                              >handleClickOnVisualizationButton</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="member">
+                    <h4 class="name" id="event:input">
+                      <a class="href-link" href="#event:input">#</a>
+
+                      <span class="code-name"> input </span>
+                    </h4>
+
+                    <dl class="details">
+                      <p class="tag-source">
+                        <a href="script.js.html" class="button">View Source</a>
+                        <span>
+                          <a href="script.js.html">script.js</a>,
+                          <a href="script.js.html#line15">line 15</a>
+                        </span>
+                      </p>
+                    </dl>
+
+                    <div class="method-parameter columns">
+                      <div class="column is-2">
+                        <label>Listeners of This Event:</label>
+                      </div>
+                      <div class="column is-10">
+                        <ul>
+                          <li>
+                            <a href="global.html#handleChangeInIterationDelay"
+                              >handleChangeInIterationDelay</a
+                            >
+                          </li>
+
+                          <li>
+                            <a href="global.html#handleChangeInNumberOfPoints"
+                              >handleChangeInNumberOfPoints</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="member">
+                    <h4 class="name" id="event:resize">
+                      <a class="href-link" href="#event:resize">#</a>
+
+                      <span class="code-name"> resize </span>
+                    </h4>
+
+                    <dl class="details">
+                      <p class="tag-source">
+                        <a href="script.js.html" class="button">View Source</a>
+                        <span>
+                          <a href="script.js.html">script.js</a>,
+                          <a href="script.js.html#line11">line 11</a>
+                        </span>
+                      </p>
+                    </dl>
+
+                    <div class="method-parameter columns">
+                      <div class="column is-2">
+                        <label>Listeners of This Event:</label>
+                      </div>
+                      <div class="column is-10">
+                        <ul>
+                          <li>
+                            <a href="global.html#handleResize">handleResize</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </section>
+        </div>
+
+        <footer class="footer">
+          <div class="content has-text-centered">
+            <p>
+              Documentation generated by
+              <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.2</a>
+            </p>
+            <p class="sidebar-created-by">
+              <a
+                href="https://github.com/SoftwareBrothers/better-docs"
+                target="_blank"
+                >BetterDocs theme</a
+              >
+              provided with <i class="fas fa-heart"></i> by
+              <a href="http://softwarebrothers.co" target="_blank"
+                >SoftwareBrothers - JavaScript Development Agency</a
+              >
+            </p>
+          </div>
+        </footer>
+      </div>
+      <div id="side-nav" class="side-nav"></div>
+    </div>
+    <script src="scripts/app.min.js"></script>
+    <script>
+      PR.prettyPrint();
+    </script>
+    <script src="scripts/linenumber.js"></script>
+  </body>
+</html>

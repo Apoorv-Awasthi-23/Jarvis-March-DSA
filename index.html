@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Convex Hull - Jarvis March Algorithm</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" type="ico" href="./favicon.ico" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1 class="heading">Visualization of Jarvis March Algorithm</h1>
+      <main class="main-content"></main>
+      <div class="sliders">
+        <div>
+          <div class="slider-value slider--points">Number of points: 3</div>
+          <input
+            type="range"
+            step="1"
+            min="3"
+            max="100"
+            class="slider-points"
+            value="3"
+          />
+        </div>
+        <div>
+          <div class="slider-value slider--delay">
+            Iteration delay (in ms): 0
+          </div>
+          <input
+            type="range"
+            step="10"
+            min="0"
+            max="3000"
+            class="slider-delay"
+            value="3"
+          />
+        </div>
+      </div>
+      <aside class="actions">
+        <button class="btn btn--start-visualization">
+          Start Visualization
+        </button>
+        <button class="btn btn--randomize-points">Randomize Points</button>
+      </aside>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
