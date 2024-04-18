@@ -30,8 +30,4 @@ The visualization in this project displays the randomly generated points, and as
 
 This project does not have any external dependencies. It uses vanilla JavaScript and basic HTML/CSS for the visualization.
 
-## Team Members
 
-- Anirudh Mishra (2020B4A72169H)
-- Arkodipto Dutta (2020B4A72177H)
-- Sushant Chaudhary (2020B5A72251H)
